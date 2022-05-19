@@ -1,0 +1,35 @@
+{
+  "name": "figma_page",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/figma-page.js",
+  "module": "./dist/figma-page.js",
+  "exports": {
+    ".": {
+      "import": "./dist/figma-page.es.js",
+      "require": "./dist/figma-page.umd.js"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "figma-page": "^1.0.2",
+    "path": "^0.12.7",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.33",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.34.7"
+  }
+}
